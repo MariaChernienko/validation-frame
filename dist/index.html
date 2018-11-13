@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Submit Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="form-title">registration</h1>
+
+    <form class="form-container">
+      <div class="input-group">
+        <label for="firsrName">First name *</label>
+        <input
+          id="firstName"
+          class="textVal field"
+          placeholder="Maria"
+          data-validation="text"
+          data-type="email"
+          autocomplete="off"
+        />
+      </div>
+      <div class="input-group">
+        <label for="lastName">Last name *</label>
+        <input
+          id="lastName"
+          class="textVal field"
+          placeholder="Chernienko"
+          data-validation="text"
+          autocomplete="off"
+        />
+      </div>
+      <div class="input-group">
+        <label for="birthday">Birthday *</label>
+        <input
+          id="birthday"
+          class="field"
+          type="date"
+          placeholder="10.10.1010"
+        />
+      </div>
+      <div class="input-group">
+        <label for="gender">Gender *</label>
+        <input id="gender" type="radio" value="female" /><span>female</span>
+        <input id="gender" type="radio" value="male" /><span>male</span>
+      </div>
+      <div class="input-group">
+        <label for="countrySelect">Country *</label>
+        <select id="countrySelect">
+          <option value="ukraine">Ukraine</option>
+          <option value="austria">Austria</option>
+          <option value="belgium">Belgium</option>
+          <option value="bulgaria">Bulgaria</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="italy">Italy</option>
+          <option value="netherlands">the Netherlands</option>
+          <option value="poland">Poland</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="email">Email *</label>
+        <input
+          id="email"
+          class="emailVal field"
+          placeholder="abs@gmail.com"
+          data-validation="email"
+          autocomplete="off"
+        />
+      </div>
+      <div class="input-group">
+        <label for="password">Password *</label>
+        <input
+          id="password"
+          class="passwordVal field"
+          type="password"
+          placeholder="password"
+          data-validation="password"
+        />
+      </div>
+      <div class="input-group">
+        <label for="address">Address *</label>
+        <input
+          id="address"
+          class="field"
+          placeholder="address"
+          data-validation="text"
+          autocomplete="off"
+        />
+      </div>
+      <div class="input-group">
+        <label for="notes">Notes</label>
+        <textarea
+          id="notes"
+          placeholder="type here an additional information"
+          rows="3"
+        ></textarea>
+      </div>
+      <footer>
+        <button type="submit" value="send" class="btn">Submit</button>
+      </footer>
+    </form>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
